@@ -1,0 +1,155 @@
+/*  Ajusta el ancho del cuerpo al 100% del viewport y establece un color de fondo   */
+body {
+    background-color: #EAEAEA;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*  Centra el breadcrumb horizontalmente y agrega un margen superior    */
+.breadcrumb-container {
+    justify-content: center;
+    gap: 15rem;
+    margin-top: 20px;
+}
+
+/* Estilo para el contenedor principal: 
+   Se utiliza flexbox para alinear y centrar los elementos, además de agregar márgenes y padding. */
+#contenidoPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Estilo para la imagen del slider: 
+   Se ajusta al ancho disponible y se fija la altura de la imagen. */
+.imagenSlider {
+    width: 100%;
+    height: 800px;
+}
+
+/* Estilo para la sección del slider: 
+   Se define el tamaño, color de fondo, borde redondeado y alineación de los elementos dentro de la sección. */
+.seccionSlider {
+    width: 45%;
+    background-color: #DFF4FF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilo para la sección de suscripción: 
+   Se ajusta el tamaño y se agrega padding para el contenido dentro de esta sección. */
+.seccionSuscripcion {
+    width: 45%;
+    padding: 40px;
+}
+
+/*  Estilos generales para los títulos  */
+#tituloSlider, #tituloSuscripcion {
+    font-size: 40px;
+    text-align: center;
+}
+
+/*  Estilo específico para el título del slider */
+#tituloSlider {
+    margin-top: 10px;
+    font-family: 'Rockwell Extra Bold';
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/* Estilo para el título de suscripción: 
+   Se ajustan los márgenes y se cambia el color del texto para darle un tono más suave. */
+#tituloSuscripcion {
+    color: #5B97B8;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+/* Estilo para los subtítulos de suscripción: 
+   Se agregan márgenes, tamaño de fuente, color y alineación para los subtítulos dentro de la sección de suscripción. */
+.subtituloSuscripcion {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    margin-right: 20%;
+    font-size: 24px;
+    color: #81AFC9;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Estilo para el tercer subtítulo de suscripción: 
+   Se cambia el color específicamente para el tercer subtítulo dentro de la lista. */
+.subtituloSuscripcion:nth-child(2) {
+    color: #5B97B8;
+}
+
+/*  Estilo para el enlace de suscripción */
+.enlaceSuscripcion {
+    text-decoration: none;
+}
+
+/* Estilo para el botón de suscripción: 
+   Se define el tamaño del botón, el color de fondo, el borde redondeado y el cambio de color al pasar el cursor. */
+.botonSuscripcion {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 30px;
+    background-color: var(--primary-100);
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+/*  Estilo para el hover del botón de suscripción   */
+.botonSuscripcion:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas grandes: 
+   Se ajustan los tamaños de los elementos y la disposición para pantallas más anchas (más de 1500px). */
+@media screen and (min-width: 1500px) {
+    #contenidoPrincipal {
+        padding: 30px;
+    }
+    
+    .imagenSlider {
+        max-width: 600px;
+        max-height: 800px;
+    }
+    
+    .seccionSuscripcion {
+        padding: 50px;
+    }
+    
+    #tituloSlider, #tituloSuscripcion {
+        font-size: 50px;
+    }
+    
+    .subtituloSuscripcion {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    #tituloSlider {
+        font-size: 70px;
+    }
+}
+
+/* Estilo para mantener el footer en la parte inferior en pantallas altas*/
+@media screen and (min-height: 2000px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

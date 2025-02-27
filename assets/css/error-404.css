@@ -1,0 +1,129 @@
+/*  Ajusta el ancho del cuerpo al 100% del viewport y establece un color de fondo   */
+body {
+    background-color: #EAEAEA;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*  Estilos para la sección principal de la página de error */
+#contenidoPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 80%;
+    height: auto;
+    margin: 35px auto;
+    padding: 14px;
+    background-color: #DFF4FF;
+    border-radius: 5px;
+}
+
+/*  Estilos para el título del error    */
+.tituloError {
+    margin-bottom: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*  Estilos para los textos del mensaje de error    */
+.descripcionError, .ayudaError {
+    margin-top: 35px;
+    margin-right: 7px;
+    margin-bottom: 37px;
+    margin-left: 0px;
+    font-size: 15px;
+    font-style: italic;
+    transform: scaleY(1.2);
+}
+
+/*  Ajusta la separación inferior y el espaciado entre letras en la descripción del error   */
+.descripcionError {
+    margin-bottom: 45px;
+    letter-spacing: 0.5px;
+}
+
+/*  Estilos con el tamaño de la imagen  */
+.imagenError {
+    width: 100%;
+    height: 350px;
+}
+
+/*  Quita la decoración del enlace dentro del botón  */
+#enlaceSalida {
+    text-decoration: none;
+}
+
+/*  Estilos para el botón de salida   */
+.botonSalida {
+    display: block;
+    margin: 0 auto;
+    padding: 14px 18px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #004E75;
+    border-radius: 7px;
+    transition: 0.3s;
+    transform: translate(-20px, -3px);
+    cursor: pointer;
+}
+
+/*  Cambia el color de fondo al pasar el mouse sobre el botón   */
+.botonSalida:hover {
+    background-color: #003D5B;
+}
+
+/*  Evita que el footer se desborde si hay mucho contenido */
+footer {
+    overflow: hidden;
+}
+
+/*  Estilos para pantalla grandes (mayores a 1000 píxeles de ancho)  */
+@media screen and (min-width: 1000px) {
+    /*  Ajusta los estilos de la sección principal */
+    #contenidoPrincipal {
+        gap: 130px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    /*  Ajusta los estilos del título del error   */
+    .tituloError {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    /*  Ajusta los textos del mensaje de error    */
+    .descripcionError, .ayudaError {
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-bottom: 55px;
+        font-size: 22px;
+        transform: scaleY(1.2);
+    }
+
+    /*  Ajusta la separación inferior y el espaciado entre letras en la descripción  */
+    .descripcionError {
+        margin-bottom: 70px;
+        letter-spacing: 0.8px;
+    }
+
+    /*  Ajusta el botón de salida   */
+    .botonSalida {
+        padding: 20px 25px;
+        font-size: 20px;
+        transform: translate(-30px, -5px);
+    }
+}
+
+/*  Fija el footer en la parte inferior en pantallas altas */
+@media screen and (min-height: 809px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- CABECERA -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Relax Soft es una empresa de ciberseguridad especializada en proteger tanto hogares como empresas con soluciones avanzadas en cámaras IP, cerraduras electrónicas, 
+      CPD, y aplicaciones web para la seguridad personal y profesional. Ofrecemos servicios personalizados con tecnología de última generación para mantener tus datos y dispositivos protegidos.">
+    <title>Contacto</title>
+    <link rel="icon" href="./assets/img/pictures-backgrounds/brand-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/general.css"/>
+    <link rel="stylesheet" href="./assets/css/contact.css"/>
+</head>
+
+<!-- CUERPO DE WEB -->
+
+<body>
+
+    <!-- CABECERA -->
+   <header id="header" class="cabecera-global">
+        <section class="logo">
+            <a href="./index.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
+                    width="200" /></a>
+            <p class="fuenteLogo">RELAX<br>SOFT</p>
+        </section>
+        <section class="menu-global">
+            <a href="#">PROYECTOS</a>
+
+            <hr>
+
+            <a href="#">EMPRESA</a>
+
+            <hr>
+
+            <a href="./02-item-list.html">APP WEB</a>
+
+            <hr>
+
+            <a href="./04-contact.html">CONTACTO</a>
+
+        </section>
+    </header>
+
+
+    <section class="breadcrumb-container">
+  
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb">
+            <a href="index.html">INICIO</a> / <a href="./04-contact.html">CONTACTO</a>
+        </div>
+
+        <!-- AUDIO BACKGROUND -->
+        <article class="audio-container">
+           <p>Reproduzca música ambiente</p>
+           <audio controls autoplay loop preload="auto">
+              <source src="assets/audio/ambiente.mp3">
+              <source src="assets/audio/ambiente.ogg">
+           </audio>
+        </article>
+
+     </section>
+
+
+    <!-- PARTE PRINCIPAL -->
+    <main id="contenidoPrincipal" class="home-container">
+        <!--    SECCIÓN DE INFORMACIÓN DE CONTACTO  -->
+        <section id="infoContacto" class="infoContacto">
+            <header class="encabezadoSeccion">
+                <h2>Información de contacto</h2>
+            </header>
+
+            <!--    ARTÍCULOS CON TELÉFONOS DE CONTACTO -->
+            <article id="infoTelefonos" class="infoTelefonos">
+                <header class="encabezadoArticulo">
+                    <h2>Por teléfono</h2>
+                </header>
+                <p class="telefono">Teléfono España: <a href="tel:+34912345678" class="enlaceTelefono">+34 91 234 56 78</a></p>
+                <p class="telefono">Teléfono California: <a href="tel:+18005532447" class="enlaceTelefono">+1 800 553 2447</a></p>
+            </article>
+
+            <!--    ARTÍCULOS CON DIRECCIONES FÍSICAS   -->
+            <article id="infoDirecciones" class="infoDirecciones">
+                <header class="encabezadoArticulo">
+                    <h2>Direcciones Físicas</h2>
+                </header>
+                <div class="direccionContenedor">
+                    <p class="direccion">Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
+                    
+                    <iframe src="https://www.google.com/maps?q=4298+24th+St,+San+Francisco,+CA,+94114&output=embed" 
+                        allowfullscreen title="Sede San Francisco" class="mapa"></iframe>
+                </div>
+                <div class="direccionContenedor">
+                    <p class="direccion">Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
+                    
+                    <iframe src="https://www.google.com/maps?q=Gran+V%C3%ADa,+34,+Centro,+28013+Madrid&output=embed" 
+                        title="Sede Madrid" class="mapa"></iframe>
+                </div>
+            </article>
+        </section>
+
+        <!--    SECCIÓN DE FORMULARIO DE CONTACTO   -->
+        <section id="infoFormulario" class="infoFormulario">
+            <!--    Formulario de contacto  -->
+            <form id="formulario" class="formulario">
+                <legend class="tituloFormulario">Formulario</legend>
+
+                <!--    Campo para el nombre -->
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" size="75" required/><br>
+
+                <!--    Campo para el correo electrónico -->
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" size="75" required/><br>
+
+                <!--    Selección del país   -->
+                <label for="pais">País</label>
+                <select id="pais" required>
+                    <option value="esp">España</option>
+                    <option value="usa">Estados Unidos</option>
+                </select><br>
+
+                <!--    Campo para el asunto    -->
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" size="40" required/><br>
+
+                <!--    Campo para el mensaje   -->
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" rows="10" cols="50" required></textarea>
+
+                <input type="submit" value="Enviar" />
+            </form>
+        </section>
+    </main>
+
+    <!-- ANCLA HACIA HEADER -->
+    <aside>
+        <a href="#top"><img src="./assets/img/icons/go-to-top-black.png" alt="Ir al inicio de la página" width="36"></a>
+    </aside>
+
+    <!-- PIE DE PÁGINA -->
+   <footer>
+
+        <!-- SECCIÓN FOOTER LEGALIDAD-->
+        <section class="legalidad-container">
+            <p>&copy; Copyright 2024 Relax Soft</p>
+            <p>Política de cookies</p>
+            <p>Términos y condiciones</p>
+            <p>Accesibilidad</p>
+        </section>
+
+        <!-- BARRA VERTICAL PARA DECORAR Y SEPARAR SECTION EN FOOTER -->
+        <hr class="barra-vertical-footer">
+
+        <!-- SECCIÓN FOOTER CONTACTO-->
+        <section class="contacto-container">
+
+            <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
+            <article class="direcciones">
+
+                <p>
+                    <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
+                    Teléfono California: <a href="tel:+1 800 553 2447">+1 800 553 2447</a>
+                </p>
+
+                <p>
+                    <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
+                    Teléfono España: <a href="tel:+34 91 234 56 78">+34 91 234 56 78</a>
+                </p>
+
+                <p>
+                    <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
+                    Sede Main: <a href="https://acortar.link/5mc12g">4298, 24th St, San Francisco, CA, 94114</a>
+                </p>
+                
+                <p>
+                    <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
+                    Sede Enlace: <a href="https://acortar.link/HhodBu">Gran Vía, 34, Centro, 28013 Madrid</a>
+                </p>
+            </article>
+
+            <!-- ARTÍCULO REDES SOCIALES -->
+            <article class="redes-sociales">
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
+                        alt="youtube-icon" width="36"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"
+                        alt="facebook-icon" width="36"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/icons/instagram-icon.png"
+                        alt="instagram-icon" width="36"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/icons/twitter-icon.png"
+                        alt="twitter-icon" width="36"></a>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
