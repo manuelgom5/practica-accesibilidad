@@ -5,6 +5,10 @@ body {
     min-height: 100vh;
 }
 
+.audio-container p {
+    color: #000;
+}
+
 /*  Centra el breadcrumb horizontalmente y agrega un margen superior    */
 .breadcrumb-container {
     justify-content: center;
