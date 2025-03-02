@@ -6,7 +6,9 @@ body {
 }
 
 .audio-container p {
+    font-size: 18px;
     color: #000;
+    font-weight: bolder;
 }
 
 /*  Centra el breadcrumb horizontalmente y agrega un margen superior    */
